@@ -4,58 +4,47 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Сайт-визитка</title>
-  <!-- Подключение Bootstrap 5 через CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    /* Верхняя шапка */
     header {
-      background: #007bff;
+      background: #9b59b6; /* Фиолетовый */
       color: #fff;
       padding: 20px 0;
       text-align: center;
     }
-    /* Нижняя часть шапки */
     #header-bottom {
-      background: #e9ecef;
+      background: #f1c40f; /* Светло-розовый */
       padding: 10px 0;
       text-align: center;
     }
-    /* Блок об услугах компании */
     #main {
       padding: 20px 0;
     }
-    /* Блок с методами компании */
     #method {
       padding: 20px 0;
-      background: #f1f1f1;
+      background: #e57373; /* Розовый */
     }
-    /* Блок с портфолио компании */
     #work {
       padding: 20px 0;
     }
-    /* Подвал */
     footer {
-      background: #343a40;
+      background: #8e44ad; /* Темно-фиолетовый */
       color: #fff;
       padding: 20px 0;
       text-align: center;
     }
-    /* Класс для одинакового размера изображений */
     .img-same {
-      width: 300px;      /* или иные значения, сохраняя пропорцию 3:4 */
+      width: 300px;
       height: 400px;
-      object-fit: cover; /* изображение будет обрезаться для заполнения заданного размера */
+      object-fit: cover;
     }
   </style>
 </head>
 <body>
-  <!-- Основной контейнер -->
   <div class="container">
-    <!-- Шапка сайта -->
     <header>
       <h1>Добро пожаловать в мой блог</h1>
       <p>Откройте для себя мои увлечения и достижения</p>
-      <!-- Навигационная шапка -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bs-menu" aria-controls="bs-menu" aria-expanded="false" aria-label="Toggle navigation">
@@ -87,11 +76,9 @@
         </div>
       </nav>
     </header>
-    <!-- Нижняя часть "шапки" сайта -->
     <div id="header-bottom">
       <p>Здесь вы можете узнать немного больше обо мне</p>
     </div>
-    <!-- Блок об услугах компании -->
     <div id="main">
       <div class="row text-center">
         <h2>Платонова Алиса Романовна</h2>
@@ -111,45 +98,36 @@
         </div>
       </div>
     </div>
-    <!-- Блок, содержащий информацию об основных методах компании -->
     <div id="method">
       <div class="row">
         <div class="col-md-12">
           <h2>Краткая биография</h2>
-          <p>Меня зовут Платонова Алиса, я студентка 2-го курса ОГУ по специальности «Прикладная информатика». Учусь на «хорошо-отлично», участвую в научных конференциях и пишу статьи, развиваю навыки в Excel и Python. В свободное время хожу в зал и играю в шахматы за университетскую команду.</p>
+          <p>Меня зовут Платонова Алиса, я студентка 2-го курса ОГУ по специальности «Прикладная информатика». Учусь на «хорошо-отлично», участвую в научных проектах, интересуюсь программированием и новыми технологиями. В свободное время люблю читать книги и играть в шахматы.</p>
         </div>
       </div>
     </div>
-    <!-- Блок, содержащий портфолио компании -->
     <div id="work">
-      <div class="row text-center" style="background:#f35e59; color:#fff; padding:20px 0;">
-        <h2>Сферы деятельности</h2>
-        <p class="lead">Сфера деятельности включает учёбу, науку, работу, волонтёрство, творчество, спорт, общественную деятельность, предпринимательство и изучение языков.</p>
-        <hr>
+      <div class="row text-center">
+        <h2>Мое портфолио</h2>
+        <p class="lead">Несколько проектов, над которыми я работала</p>
         <div class="col-md-4">
-          <img src="img1/iam.jpg" alt="Проект 1" class="img-fluid img-same">
-          <h4>Обучение</h4>
-          <p>Учёба очень важна, но не всегда интересна, и всё-таки приходится перебарывать себя и разбираться: если тема для меня интересна, то я готова тратить усилия.</p>
+          <img src="project1.jpg" alt="Проект 1" class="img-same">
+          <h4>Проект 1</h4>
         </div>
         <div class="col-md-4">
-          <img src="img1/pervie.jpg" alt="Проект 2" class="img-fluid img-same">
-          <h4>Активизм</h4>
-          <p>"Артек" и "Орлёнок" — организации, которые помогли мне проявить себя, завести новые знакомства и научиться работать в команде.</p>
+          <img src="project2.jpg" alt="Проект 2" class="img-same">
+          <h4>Проект 2</h4>
         </div>
         <div class="col-md-4">
-          <img src="img1/voleybool.jpg" alt="Проект 3" class="img-fluid img-same">
-          <h4>Шахматы</h4>
-          <p>Спорт — неотъемлемая часть моей жизни, поэто я совмещаю физический и умстенный спорт.</p>
+          <img src="project3.jpg" alt="Проект 3" class="img-same">
+          <h4>Проект 3</h4>
         </div>
       </div>
     </div>
+    <footer>
+      <p>&copy; 2023 Платонова Алиса Романовна. Все права защищены.</p>
+    </footer>
   </div>
-  <!-- Подвал сайта -->
-  <footer>
-    <p>&copy; 2025. Все права защищены.</p>
-  </footer>
-  
-  <!-- Подключение Bootstrap JS (Bootstrap 5) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
