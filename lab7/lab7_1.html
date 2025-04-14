@@ -4,47 +4,58 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Сайт-визитка</title>
+  <!-- Подключение Bootstrap 5 через CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
+    /* Верхняя шапка */
     header {
-      background: #6c63ff; /* Нежный синий */
+      background: #4A90E2; /* Синий цвет */
       color: #fff;
       padding: 20px 0;
       text-align: center;
     }
+    /* Нижняя часть шапки */
     #header-bottom {
-      background: #d6a7e9; /* Нежно фиолетовый */
+      background: #E6E6FA; /* Лавандовый цвет */
       padding: 10px 0;
       text-align: center;
     }
+    /* Блок об услугах компании */
     #main {
       padding: 20px 0;
     }
+    /* Блок с методами компании */
     #method {
       padding: 20px 0;
-      background: #f0e5ff; /* Светлый лавандовый */
+      background: #F3E5F5; /* Светлый лавандовый */
     }
+    /* Блок с портфолио компании */
     #work {
       padding: 20px 0;
     }
+    /* Подвал */
     footer {
-      background: #4a4e69; /* Темный серый синий */
+      background: #4A90E2; /* Синий цвет */
       color: #fff;
       padding: 20px 0;
       text-align: center;
     }
+    /* Класс для одинакового размера изображений */
     .img-same {
-      width: 300px;
+      width: 300px;      /* или иные значения, сохраняя пропорцию 3:4 */
       height: 400px;
-      object-fit: cover;
+      object-fit: cover; /* изображение будет обрезаться для заполнения заданного размера */
     }
   </style>
 </head>
 <body>
+  <!-- Основной контейнер -->
   <div class="container">
+    <!-- Шапка сайта -->
     <header>
       <h1>Добро пожаловать в мой блог</h1>
       <p>Откройте для себя мои увлечения и достижения</p>
+      <!-- Навигационная шапка -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bs-menu" aria-controls="bs-menu" aria-expanded="false" aria-label="Toggle navigation">
@@ -76,21 +87,23 @@
         </div>
       </nav>
     </header>
+    <!-- Нижняя часть "шапки" сайта -->
     <div id="header-bottom">
       <p>Здесь вы можете узнать немного больше обо мне</p>
     </div>
+    <!-- Блок об услугах компании -->
     <div id="main">
       <div class="row text-center">
-        <h2>Платонова Алиса Романовна</h2>
+        <h2>Борисов Александр Сергеевич</h2>
         <p class="lead"></p>
         <hr>
         <div class="col-md-4">
           <h3>Увлечения</h3>
-          <p>Я разносторонний человек, который в жизни попробовал себя во многом, но одно из главных увлечений — это шахматы.</p>
+          <p>Я разносторонний человек, который в жизни попробовал себя во многом, но одно из главных увлечений — это волейбол.</p>
         </div>
         <div class="col-md-4">
           <h3>Достижения</h3>
-          <p>Участие в соревнованиях.</p>
+          <p>Участия в соревнованиях, написание научных статей, волонтёрство.</p>
         </div>
         <div class="col-md-4">
           <h3>Планы</h3>
@@ -98,37 +111,16 @@
         </div>
       </div>
     </div>
+    <!-- Блок, содержащий информацию об основных методах компании -->
     <div id="method">
       <div class="row">
         <div class="col-md-12">
           <h2>Краткая биография</h2>
-          <p>Меня зовут Платонова Алиса, я студентка 2-го курса ОГУ по специальности «Прикладная информатика». Учусь на «хорошо-отлично», участвую в научных проектах, интересуюсь программированием и новыми технологиями. В свободное время люблю читать книги и играть в шахматы.</p>
+          <p>Меня зовут Борисов Александр, я студент 2-го курса ОГУ по специальности «Прикладная информатика». Учусь на «хорошо-отлично», участвую в научных конференциях и пишу статьи, развиваю навыки в Excel и Python. В свободное время занимаюсь волонтёрством и играю в волейбол за университетскую команду. В будущем хочу построить карьеру в сфере дата сайнс.</p>
         </div>
       </div>
     </div>
-    <div id="work">
-      <div class="row text-center">
-        <h2>Мое портфолио</h2>
-        <p class="lead">Несколько проектов, над которыми я работала</p>
-        <div class="col-md-4">
-          <img src="project1.jpg" alt="Проект 1" class="img-same">
-          <h4>Проект 1</h4>
-        </div>
-        <div class="col-md-4">
-          <img src="project2.jpg" alt="Проект 2" class="img-same">
-          <h4>Проект 2</h4>
-        </div>
-        <div class="col-md-4">
-          <img src="project3.jpg" alt="Проект 3" class="img-same">
-          <h4>Проект 3</h4>
-        </div>
-      </div>
-    </div>
-    <footer>
-      <p>&copy; 2023 Платонова Алиса Романовна. Все права защищены.</p>
-    </footer>
-  </div>
-   <!-- Блок, содержащий портфолио компании -->
+    <!-- Блок, содержащий портфолио компании -->
     <div id="work">
       <div class="row text-center" style="background:#f35e59; color:#fff; padding:20px 0;">
         <h2>Сферы деятельности</h2>
@@ -152,6 +144,12 @@
       </div>
     </div>
   </div>
+  <!-- Подвал сайта -->
+  <footer>
+    <p>&copy; 2025. Все права защищены.</p>
+  </footer>
+
+  <!-- Подключение Bootstrap JS (Bootstrap 5) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
